@@ -5,12 +5,15 @@
 
 </div>
 <br>
-<div id="searchbar" class="md-form" >
+
+<form onsubmit={{action "searchReddit"}}>
+
+<div id="searchbar" class="md-form">
 {{input type="text"  id="form1" class="form-control" value=subreddit}}
 
-<button onclick={{action "searchReddit"}} class="btn btn-outline-danger waves-effect"> Search </button>
+<button type="submit" class="btn btn-outline-danger waves-effect"> Search </button>
 </div>
-
+</form>
 
 <br>
 

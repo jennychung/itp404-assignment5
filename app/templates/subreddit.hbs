@@ -1,7 +1,13 @@
 {{#each model as |event|}}
   <div class="event">
+<div id="title">
+{{#if event.data.thumbnail}}
+  <img src={{event.data.thumbnail}} width="30" height="30"/>
+  {{else}}
+    <img src='https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/flip.jpg' width="30" height="30"/>
+{{/if}}
 
-    <div id="title"> {{event.data.title}} </div>
+    {{event.data.title}} </div>
 
 
     <div class="d-flex justify-content-end">
